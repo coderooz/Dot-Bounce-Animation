@@ -1,0 +1,54 @@
+/* Reset some default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Center the content vertically and horizontally */
+html, body {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f0f0f0;
+}
+
+.container {
+text-align: center;
+}
+
+h1 {
+font-family: Arial, sans-serif;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.loader-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-dots div {
+    width: 12px;
+    height: 12px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 0 6px;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .loader-dots div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loader-dots div:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  
